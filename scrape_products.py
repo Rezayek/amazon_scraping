@@ -38,6 +38,7 @@ def scrape_products(url, headers):
         
         div_rating = product_element.find('div', class_='a-section a-spacing-none a-spacing-top-micro')
         span_rating = div_rating.find('span', class_="a-declarative")
+        
         #Find stars rating
         star_rating = span_rating.find('span', class_="a-icon-alt")
         if star_rating:

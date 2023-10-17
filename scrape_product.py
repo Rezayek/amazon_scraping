@@ -177,10 +177,7 @@ def fetch_data(product_page):
         # Add the detail to the product_details dictionary
         product_details[detail_name] = detail_value
     
-    # print(clean_description(products_description))
-    # print(clean_details(product_details))
-    
-    
+
     return clean_description(products_description), clean_details(product_details)
 
 def clean_details(product_details):
